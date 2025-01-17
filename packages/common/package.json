@@ -1,0 +1,22 @@
+{
+  "name": "@mystuff/common",
+  "version": "0.0.0",
+  "private": true,
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "scripts": {
+    "lint": "biome lint --error-on-warnings .",
+    "fmt": "biome format --write . && biome check --fix --unsafe ."
+  },
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@mystuff/typescript-config": "*"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

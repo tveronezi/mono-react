@@ -1,0 +1,19 @@
+{
+  "name": "mono-react",
+  "private": true,
+  "scripts": {
+    "fmt": "biome format --write . && biome check --fix --unsafe . && turbo fmt --parallel",
+    "lint": "turbo lint --parallel",
+    "build": "turbo build",
+    "dev": "turbo dev"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "turbo": "2.3.3"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.9.2",
+  "workspaces": ["packages/*"]
+}
