@@ -10,6 +10,7 @@
     "build": "tsc -b && vite build"
   },
   "devDependencies": {
+    "@mystuff/tailwind-preset": "*",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
     "@vitejs/plugin-react-swc": "^3.5.0",

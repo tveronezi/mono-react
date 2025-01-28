@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+  presets: [require("@mystuff/tailwind-preset")],
   darkMode: "class",
   content: [
     "./index.html",

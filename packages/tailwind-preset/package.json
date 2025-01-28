@@ -1,0 +1,12 @@
+{
+  "name": "@mystuff/tailwind-preset",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "lint": "biome lint --error-on-warnings .",
+    "fmt": "biome format --write . && biome check --fix --unsafe ."
+  },
+  "peerDependencies": {
+    "tailwindcss": ">=3.4.17"
+  }
+}

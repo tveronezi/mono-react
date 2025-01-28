@@ -7,7 +7,7 @@ export function Button(props: {
   return (
     <button
       type="button"
-      className="rounded bg-yellow-400 p-2"
+      className="rounded bg-brand-primary p-2 text-white"
       onClick={() => alert("Hello app!")}
     >
       {children}
