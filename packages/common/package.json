@@ -1,22 +1,33 @@
 {
   "name": "@mystuff/common",
-  "version": "0.0.0",
   "private": true,
-  "exports": {
-    ".": "./src/index.ts"
-  },
+  "version": "0.0.0",
+  "type": "module",
+  "main": "./dist/common-library.umd.js",
+  "module": "./dist/common-library.es.js",
+  "types": "./dist/index.d.ts",
+  "files": ["dist"],
   "scripts": {
+    "build": "tsc -b && vite build",
     "lint": "biome lint --error-on-warnings .",
     "fmt": "biome format --write . && biome check --fix --unsafe ."
   },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
   "devDependencies": {
-    "@types/node": "^20.11.24",
+    "@eslint/js": "^9.17.0",
     "@types/react": "^18.3.18",
     "@types/react-dom": "^18.3.5",
-    "@mystuff/typescript-config": "*"
-  },
-  "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0"
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5",
+    "vite-plugin-dts": "^4.5.0"
   }
 }
